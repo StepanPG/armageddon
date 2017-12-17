@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Armageddon</title>
+    <link rel="shortcut icon" href="./img/player.png" type="image/png">
+    <link rel="stylesheet" href="./game.css">
+
+    <script async src="../../dist/game.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="info">
+            <div id="score">
+                Astroids destroyed: <span>0</span>
+            </div>
+        </div>
+        <div id="game">
+            <div id="game-over-state" class="finish-state game-over-state">
+                <div>
+                    <span>Earth destroyed</span>
+                    <button id="restartGameOver">Try again</button>
+                </div>
+            </div>
+
+            <div id="win-state" class="finish-state win-state">
+                <div>
+                    <span>Earth saved</span>
+                    <button id="restartWinGame">Try again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
